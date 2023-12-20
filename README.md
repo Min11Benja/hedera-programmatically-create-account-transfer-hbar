@@ -32,7 +32,7 @@ mkdir hello-hedera && cd hedera
 
 ```bash
 git init .
-git remote add origin [git@github.com:user/repo.git](https://github.com/Min11Benja/hedera-programmatically-create-account-transfer-hbar.git)
+git remote add origin https://github.com/Min11Benja/hedera-programmatically-create-account-transfer-hbar.git
 git fetch origin
 git checkout main
 ```
@@ -78,11 +78,8 @@ npm install dotenv
 yarn add dotenv
 ```
 
-### STEP : 03
-Create a index.js file by running the following command:
-```bash
-touch index.js
-```
+### STEP 03 : Create your .env file & add your already made acocunt
+You need to already have an ECDSA account in the Hedera Developer Portal website. For more info on how to make one please follow this video [How to make a developer portal account](https://choosealicense.com/licenses/mit/](https://youtu.be/60MZf4Qtzek?si=9lUZaYfBXh8122bw)
 
 Create the .env file in your project's root directory. 
 The .env file stores your environment variables, account ID, and private key (DER encoded).
@@ -111,7 +108,7 @@ node index.js
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
+Please be patient.
 
 ## License
 
