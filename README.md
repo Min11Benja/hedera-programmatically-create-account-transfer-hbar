@@ -78,7 +78,7 @@ npm install dotenv
 yarn add dotenv
 ```
 
-### STEP 03 : Create your .env file & add your already made acocunt
+### STEP 03 : Create your .env file & add your already made account
 You need to already have an ECDSA account in the Hedera Developer Portal website. For more info on how to make one please follow this video 
 [How to make a developer portal account](https://youtu.be/60MZf4Qtzek?si=9lUZaYfBXh8122bw)
 
