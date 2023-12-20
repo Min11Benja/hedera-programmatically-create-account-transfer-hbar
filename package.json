@@ -1,0 +1,16 @@
+{
+  "name": "hedera",
+  "version": "1.0.0",
+  "description": "Hehdera Hashgraph project with Node JS using the Javascript SDK for creating accounts and transfering Hbar tokens programmatically",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.39.0",
+    "dotenv": "^16.3.1"
+  }
+}
