@@ -10,8 +10,8 @@ Hehdera Hashgraph project with Node JS using the Javascript SDK for creating acc
 - JavaScript
   
 ### Challenges faced 
-- computer clock was not in sync with Node clock
-- type errors
+- computer clock was not in sync with Node clock (make sure yours is set to syncronize automatically)
+- type errors when importing values from .env file ( use AccountId.fromString(..) & PrivateKey.fromString(..) )
 
 ### Features to implement in the future
 - User authentication - login/register
@@ -79,7 +79,8 @@ yarn add dotenv
 ```
 
 ### STEP 03 : Create your .env file & add your already made acocunt
-You need to already have an ECDSA account in the Hedera Developer Portal website. For more info on how to make one please follow this video [How to make a developer portal account](https://choosealicense.com/licenses/mit/](https://youtu.be/60MZf4Qtzek?si=9lUZaYfBXh8122bw)
+You need to already have an ECDSA account in the Hedera Developer Portal website. For more info on how to make one please follow this video 
+[How to make a developer portal account](https://youtu.be/60MZf4Qtzek?si=9lUZaYfBXh8122bw)
 
 Create the .env file in your project's root directory. 
 The .env file stores your environment variables, account ID, and private key (DER encoded).
