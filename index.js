@@ -55,6 +55,14 @@ async function environmentSetup() {
     const transactionReceipt = await sendHbar.getReceipt(client);
     console.log("The transfer transaction from my account to the new account was: " + transactionReceipt.status.toString());
 
+    //Request the cost of the query
+    const queryCost = await new AccountBalanceQuery().setAccountId(newAccountId).getCost(client);
+    console.log("The cost of query is: " +queryCost);
+
+    //Check the new account's balance
+    const getNewBalance = await new AccountBalanceQuery().setAccountId(newAccountId).execute(client);
+    console.log("The account balance after the transfer is: " +getNewBalance.hbars.toTinybars() +" tinybar.")
+
     console.log("End");
     client.close();  
     return newAccountId;
